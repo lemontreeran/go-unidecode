@@ -1,11 +1,10 @@
 language: go
 go:
-  - 1.2
-  - 1.3
-  - 1.4
-  - 1.5
-  - 1.6
-  - tip
+  - master
+  - develop
+  - 1.x
+  - 1.16.x
+  - 1.17.x
 
 sudo: false
 
@@ -23,4 +22,4 @@ script:
   - unidecode abc
   - echo "abc" | unidecode
   - echo "abc" > abc.txt && unidecode < abc.txt
-  - $HOME/gopath/bin/goveralls -repotoken fTzbGyLJgT59aIg3JJEQUJiyG6rCiTxsy
+  - $HOME/gopath/bin/goveralls -service=travis-ci

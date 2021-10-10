@@ -163,7 +163,7 @@ var x060 = []string{
 	"Wu ",      // 0x9f
 	"You ",     // 0xa0
 	"Li ",      // 0xa1
-	"Jing ",   // 0xa2
+	"Jing ",    // 0xa2
 	"Huan ",    // 0xa3
 	"Cong ",    // 0xa4
 	"Yi ",      // 0xa5
