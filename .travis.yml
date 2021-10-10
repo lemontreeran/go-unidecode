@@ -14,8 +14,7 @@ before_install:
   - go test ./...
 
 install:
-  - go get .
-  - go get ./unidecode
+  - go get -t ./...
 
 script:
   - unidecode -V
