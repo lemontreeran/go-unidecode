@@ -12,6 +12,11 @@ before_install:
   - go get github.com/axw/gocov/gocov
   - go get github.com/mattn/goveralls
   - which goveralls
+  - go test ./...
+  - if [ "$TRAVIS_GO_VERSION" = "1.15" ]; then go get github.com/mattn/goveralls; fi
+script:
+  - go test ./...
+  - if [ "$TRAVIS_GO_VERSION" = "1.15" ]; then $HOME/gopath/bin/goveralls -service=travis-ci -package="./..."; fi
 
 install:
   - go get .
@@ -22,4 +27,5 @@ script:
   - unidecode abc
   - echo "abc" | unidecode
   - echo "abc" > abc.txt && unidecode < abc.txt
-  - $HOME/gopath/bin/goveralls -service=travis-ci
+  - go test ./...
+  - if [ "$TRAVIS_GO_VERSION" = "1.15" ]; then $HOME/gopath/bin/goveralls -service=travis-ci -package="./..."; fi
