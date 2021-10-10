@@ -28,4 +28,4 @@ script:
   - echo "abc" | unidecode
   - echo "abc" > abc.txt && unidecode < abc.txt
   - go test ./...
-  - if [ "$TRAVIS_GO_VERSION" = "1.15" ]; then $HOME/gopath/bin/goveralls -service=travis-ci -package="./..."; fi
+  - if [ "$TRAVIS_GO_VERSION" >= "1.15" ]; then $HOME/gopath/bin/goveralls -service=travis-ci -package="./..."; fi
