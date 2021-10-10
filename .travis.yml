@@ -1,7 +1,6 @@
 language: go
 go:
   - master
-  - develop
   - 1.x
   - 1.16.x
   - 1.17.x
@@ -12,6 +11,7 @@ before_install:
   - if ! go get code.google.com/p/go.tools/cmd/cover; then go get golang.org/x/tools/cmd/cover; fi
   - go get github.com/axw/gocov/gocov
   - go get github.com/mattn/goveralls
+  - which goveralls
 
 install:
   - go get .
