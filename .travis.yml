@@ -8,14 +8,13 @@ go:
 sudo: false
 
 before_install:
-  - if ! go get code.google.com/p/go.tools/cmd/cover; then go get golang.org/x/tools/cmd/cover; fi
-  - go get github.com/axw/gocov/gocov
-  - go get github.com/mattn/goveralls
+  - if ! go install code.google.com/p/go.tools/cmd/cover; then go install golang.org/x/tools/cmd/cover; fi
+  - go install -v github.com/axw/gocov/gocov@latest
+  - go install -v github.com/mattn/goveralls@latest
   - go test ./...
 
 install:
-  - go get .
-  - go get ./unidecode
+  - go install ./...
 
 script:
   - unidecode -V
