@@ -1,5 +1,9 @@
 go-unidecode
 ==============
+[![Build Status](https://app.travis-ci.com/lemontreeran/go-unidecode.svg?branch=master)](https://travis-ci.com/github/lemontreeran/go-unidecode)
+[![Coverage Status](https://coveralls.io/repos/lemontreeran/go-unidecode/badge.svg?branch=master)](https://coveralls.io/r/lemontreeran/go-unidecode?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/lemontreeran/go-unidecode)](https://goreportcard.com/report/github.com/lemontreeran/go-unidecode)
+[![GoDoc](https://godoc.org/github.com/lemontreeran/go-unidecode?status.svg)](https://godoc.org/github.com/lemontreeran/go-unidecode)
 
 ASCII transliterations of Unicode text.
 
