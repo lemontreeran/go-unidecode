@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mattn/go-isatty"
 	"github.com/lemontreeran/go-unidecode"
+	"github.com/mattn/go-isatty"
 )
 
 func main() {

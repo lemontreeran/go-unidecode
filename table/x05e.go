@@ -247,7 +247,7 @@ var x05e = []string{
 	"Ting ",   // 0xf3
 	"Yin ",    // 0xf4
 	"Xun ",    // 0xf5
-	"Guang ",    // 0xf6
+	"Guang ",  // 0xf6
 	"Ting ",   // 0xf7
 	"Di ",     // 0xf8
 	"Po ",     // 0xf9
