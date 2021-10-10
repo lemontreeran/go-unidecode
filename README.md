@@ -15,8 +15,9 @@ install CLI tool:
 
 ```
 go get -u github.com/lemontreeran/go-unidecode/unidecode
-$ unidecode 北京
-Bei Jing 
+
+$ unidecode 北京kožušček
+Bei Jing kozuscek
 ```
 
 
